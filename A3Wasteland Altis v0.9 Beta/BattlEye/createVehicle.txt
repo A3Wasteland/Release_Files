@@ -1,0 +1,38 @@
+// A3Wasteland - createVehicle.txt BattlEye filters by AgentRev & JoSchaap
+
+// Vehicles
+5 "_APC_"
+5 "_Boat_"
+5 "_GMG_"
+5 "_Hatchback_"
+5 "_Heli_"
+5 "_HMG_"
+5 "_Lifeboat"
+5 "_MBT_"
+5 "_Mortar_"
+5 "_MRAP_"
+5 "_Offroad_"
+5 "_Plane_"
+5 "_Quadbike_"
+5 "_Rubberboat"
+5 "_SDV_"
+5 "_static_AA_"
+5 "_static_AT_"
+5 "_SUV_"
+5 "_Truck_"
+5 "_UAV_" !"_UAV_01_"
+5 "_UGV_"
+5 "_Van_"
+
+// Ammo boxes
+5 "Box_NATO_"
+5 "Box_East_"
+5 "Box_IND_"
+5 "_supplyCrate_"
+
+// Units
+5 "C_man_"
+
+// Buildings & objects
+5 "Bomb"
+5 "Land_" !"Land_Money_F" !"Land_Basket_F" !"Land_CanisterPlastic_F" !"Land_Suitcase_F" !"Land_CanisterFuel_F" !"Land_CanisterOil_F" !"Land_CashDesk_F" !"Land_Can_V3_F"

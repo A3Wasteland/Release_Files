@@ -1,0 +1,3 @@
+// A3Wasteland  - mpEventHandler.txt BattlEye filters by AgentRev
+
+5 ""
