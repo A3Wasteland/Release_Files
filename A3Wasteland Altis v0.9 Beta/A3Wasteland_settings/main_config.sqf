@@ -9,6 +9,8 @@ A3W_moonLight = 1;           // Moon light during night (0 = no, 1 = yes)
 A3W_missionsDifficulty = 0;  // Missions difficulty (0 = normal, 1 = hard)
 A3W_sideMissions = 1;        // Side missions (0 = no, 1 = yes)
 A3W_serverSpawning = 1;      // Vehicle, object, and loot spawning (0 = no, 1 = yes)
+A3W_boxSpawning = 1;		// if spawning is enabled, also spawn ammo boxes arround the map (0 = no, 1 = yes)
+A3W_boatSpawning = 1;		// if spawning is enabled, also spawn boats near marked areas at coasts (0 = no, 1 = yes)
 
 A3W_baseSaving = 0;          // Save base objects between restarts (0 = no, 1 = yes) - requires iniDB mod 
 PDB_ServerID = "any";        // iniDB saves prefix (change this in case you run multiple servers from the same folder)
