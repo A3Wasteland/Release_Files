@@ -20,7 +20,7 @@
 5 "_static_AT_"
 5 "_SUV_"
 5 "_Truck_"
-5 "_UAV_" !"_UAV_01_"
+5 "_UAV_" !"_UAV_01_" !"_UAV_AI"
 5 "_UGV_"
 5 "_Van_"
 
