@@ -1,3 +1,0 @@
-// A3Wasteland - remoteControl.txt BattlEye filters by AgentRev
-
-5 ""
