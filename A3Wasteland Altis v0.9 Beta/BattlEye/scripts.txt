@@ -24,7 +24,6 @@
 5 "penis"
 5 "bitch"
 5 "infect"
-5 "#86abd9"
 
 // Hack variables
 
