@@ -35,4 +35,4 @@
 
 // Buildings & objects
 5 "Bomb"
-5 "Land_" !"Land_Money_F" !"Land_Basket_F" !"Land_CanisterPlastic_F" !"Land_Suitcase_F" !"Land_CanisterFuel_F" !"Land_CanisterOil_F" !"Land_CashDesk_F" !"Land_Can_V3_F"
+5 "Land_" !"Land_Money_F" !"Land_Basket_F" !"Land_CanisterPlastic_F" !"Land_Suitcase_F" !"Land_CanisterFuel_F" !"Land_CanisterOil_F" !"Land_CashDesk_F" !"Land_Can_V3_F" !"Land_TentDome_F"
