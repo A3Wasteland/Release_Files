@@ -1,5 +1,38 @@
 // A3Wasteland - publicVariable.txt BattlEye filters by AgentRev
 
+// Config variables
+
+5 "A3W_buildingLoot"
+5 "A3W_startHour"
+5 "A3W_moonLight"
+5 "A3W_missionsDifficulty"
+5 "A3W_serverMissions"
+5 "A3W_serverSpawning"
+5 "A3W_boxSpawning"
+5 "A3W_boatSpawning"
+5 "A3W_heliSpawning"
+5 "A3W_planeSpawning"
+5 "A3W_baseBuilding"
+5 "A3W_baseSaving"
+5 "PDB_ServerID"
+
+// Spawning variables
+
+5 "currentStaticHelis"
+5 "civilianVehicles"
+5 "lightMilitaryVehicles"
+5 "mediumMilitaryVehicles"
+5 "waterVehicles"
+5 "objectList"
+5 "staticWeaponsList"
+5 "staticHeliList"
+5 "vehicleWeapons"
+5 "vehicleAddition"
+5 "vehicleAddition2"
+5 "MissionSpawnMarkers"
+
+// Other variables
+
 5 "ahSetupDone"
 5 "AntiAntiHack"
 5 "currentDate"
