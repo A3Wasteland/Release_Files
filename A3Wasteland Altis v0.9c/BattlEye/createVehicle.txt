@@ -1,6 +1,7 @@
-// A3Wasteland - createVehicle.txt BattlEye filters by AgentRev & JoSchaap
+// A3Wasteland - createVehicle.txt BattlEye filters by AgentRev, JoSchaap, and k4n30
 
 // Vehicles
+
 5 "_APC_"
 5 "_Boat_"
 5 "_GMG_"
@@ -25,14 +26,18 @@
 5 "_Van_"
 
 // Ammo boxes
+
 5 "Box_NATO_"
 5 "Box_East_"
 5 "Box_IND_"
 5 "_supplyCrate_"
 
 // Units
+
 5 "C_man_"
+5 "C_Nikos"
+5 "C_Orestes"
 
 // Buildings & objects
-5 "Bomb"
+
 5 "Land_" !"Land_Money_F" !"Land_Basket_F" !"Land_CanisterPlastic_F" !"Land_Suitcase_F" !"Land_CanisterFuel_F" !"Land_CanisterOil_F" !"Land_CashDesk_F" !"Land_Can_V3_F" !"Land_TentDome_F"
