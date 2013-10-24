@@ -1,0 +1,15 @@
+
+  Put the "A3Wasteland_settings" folder into your main ARMA 3 directory (where arma3.exe is located)
+
+  If there are existing files and you customized them, make a copy of the existing ones, put the new ones in the directory, and copy back your settings.
+  Otherwise, overwrite them.
+
+  -----
+
+  For BattleEye, please put the .TXT filters from the BattlEye folder of this repository in the BattlEye folder of your server, which is located where your .RPT log files are at.
+
+  By default, this folder should be at "%LocalAppData%\Arma 3\BattlEye", or in the folder defined by the "-profiles" option of your arma3server.exe shortcut.
+
+  If you are unsure, simply add "-BEPath=BattlEye" to your arma3server.exe shortcut, and place the .TXT files in the BattlEye folder where arma3server.exe is located.
+
+  It is recommended to only use the filters provided with this mission, as those from other sources may cause false positives.
