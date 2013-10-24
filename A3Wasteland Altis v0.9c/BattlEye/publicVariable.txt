@@ -31,10 +31,20 @@
 5 "vehicleAddition2"
 5 "MissionSpawnMarkers"
 
+// Admin variables
+
+5 "lowAdmins"
+5 "highAdmins"
+5 "serverOwners"
+5 "moderators"
+5 "administrators"
+5 "serverAdministrators"
+
 // Other variables
 
 5 "ahSetupDone"
 5 "AntiAntiHack"
+5 "bannedPlayerNames"
 5 "currentDate"
 5 "drn_DynamicWeatherEventArgs";
 5 "drn_DynamicWeather_DebugTextEventArgs"
