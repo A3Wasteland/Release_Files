@@ -50,6 +50,7 @@
 5 "drn_DynamicWeather_DebugTextEventArgs"
 5 "drn_var_DynamicWeather_Rain";
 5 "drn_var_DynamicWeather_ServerInitialized"
+5 "horde_jumpmf_var_jumping"
 5 "spawnActionHandle"
 5 "storePurchaseHandle"
 5 "storeSellingHandle"
