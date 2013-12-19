@@ -2,8 +2,6 @@
 
 // Prohibited functions
 
-5 "BIS_fnc_3Dcredits"
-5 "BIS_fnc_AAN"
 5 "setOwner"
 5 "setUnitRecoilCoefficient"
 
