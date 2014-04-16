@@ -1,0 +1,7 @@
+// A3Wasteland - setVariable.txt BattlEye filters by AgentRev
+
+5 "BuildingLoot"
+5 "handleDamageEH"
+5 "hitUnit_"
+5 "Lootready"
+5 "processedDeath"
