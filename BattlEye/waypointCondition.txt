@@ -1,0 +1,3 @@
+// A3Wasteland - waypointCondition.txt BattlEye filters by AgentRev
+
+5 "" !"[\"true\", \"\"]"
