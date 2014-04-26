@@ -15,7 +15,7 @@
 // Civilian & guerilla units
 
 5 "^C_"
-5 "^[BOI]_G_" !"_G_Mortar_01_F"
+5 "^[BOI]_G_"
 
 // Buildings & objects
 
