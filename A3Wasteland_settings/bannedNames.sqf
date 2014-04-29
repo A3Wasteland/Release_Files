@@ -3,6 +3,8 @@
 //	@file Author: AgentRev
 //	@file Created: 29/06/2013 12:21
 
+// Players joining with these names will be warned, without further action
+
 bannedPlayerNames = compileFinal str
 [
 	"Admin",
