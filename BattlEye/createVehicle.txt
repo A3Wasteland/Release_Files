@@ -3,7 +3,7 @@
 // Vehicles
 
 5 "_(APC|Boat|Hatchback|Heli|MBT|MRAP|Offroad|Plane|Quadbike|SDV|SUV|Truck|UGV|Van)_"
-5 "_(HMG|GMG|Mortar|static_AA|static_AT)_" !"_(weapon|support)_F"
+5 "_(HMG|GMG|Mortar|static_AA|static_AT)_" !"(weapon|support)_(high_)?F"
 5 "_(Lifeboat|Rubberboat)"
 5 "_UAV_" !"_UAV_(AI|01_)"
 
