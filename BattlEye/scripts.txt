@@ -3,4 +3,3 @@
 7 "BIS_fnc_AAN"
 7 "ctrlCreate"
 7 "ctrlDelete"
-7 "forceRespawn"
