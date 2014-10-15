@@ -1,9 +1,3 @@
 // A3Wasteland - publicVariableVal.txt BattlEye filters by AgentRev
 
-5 "createMine"
-5 "createUnit"
-5 "createVehicle"
-5 "BIS_fnc_3Dcredits"
-5 "BIS_fnc_AAN"
-5 "vChecksum"
-5 "vehicleChecksum"
+// disabled since not really necessary

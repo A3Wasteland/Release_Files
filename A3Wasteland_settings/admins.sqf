@@ -1,4 +1,4 @@
-//	@file Name: admins.sqf
+//	@file Name: A3Wasteland_settings\admins.sqf
 
 // Admin menu (U key) access levels
 
@@ -10,7 +10,9 @@
 	"1234876543211234", // Frylock
 	"1337133713371337"  // Carl
 
- Important: Don't put a coma at the end of the last one
+ Important: The player UID must always be placed between
+            double quotes (") and all lines need to have
+            a comma (,) except the last one.
 ********************************************************/
 
 // Low Administrators: manage & spectate players, remove hacked vehicles
@@ -25,7 +27,7 @@ highAdmins =
 	// Put player UIDs here
 ];
 
-// Server Owners: access to everything
+// Server Owners: access to everything, including god mode, money, guns, and vehicles
 serverOwners = 
 [
 	// Put player UIDs here
