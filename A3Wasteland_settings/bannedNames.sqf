@@ -13,16 +13,7 @@ bannedPlayerNames = compileFinal str
 	"Server",
 	"Server Admin",
 	"Server Administrator",
-	"Server Owner",
-	
-	// publicVariableVal BE filters
-	"createMine",
-	"createUnit",
-	"createVehicle",
-	"BIS_fnc_3Dcredits",
-	"BIS_fnc_AAN",
-	"vChecksum",
-	"vehicleChecksum"
+	"Server Owner"
 ];
 
 publicVariable "bannedPlayerNames";
