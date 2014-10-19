@@ -2,8 +2,8 @@
 
 // Config variables
 
-7 "^A3W_"
-7 "^PDB_ServerID"
+7 "^A3W_" !"^A3W_playerScore_reviveCount_"
+7 "^PDB_"
 
 // Spawning variables
 
