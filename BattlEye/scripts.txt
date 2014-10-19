@@ -1,5 +1,4 @@
 // A3Wasteland - scripts.txt BattlEye filters by AgentRev
 
-7 "BIS_fnc_AAN"
-7 "ctrlCreate"
-7 "ctrlDelete"
+7 "BIS_fnc_AAN" // AAN news banner crap
+7 "ctrlCreate" // command used to build script menus

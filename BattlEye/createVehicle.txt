@@ -1,5 +1,7 @@
 // A3Wasteland - createVehicle.txt BattlEye filters by AgentRev, JoSchaap, and k4n30
 
+// Set everything to 1 if you are using Zeus
+
 // Vehicles
 
 7 "^[BOI]_(?!\d)((APC|Boat|Heli|MBT|MRAP|Plane|Quadbike|SDV|Truck|UGV)_|Lifeboat)"
@@ -23,7 +25,7 @@
 
 7 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|CanisterFuel|CanisterOil|Can_V\d|CashDesk|Money|Suitcase|TentDome)_F"
 
-// Game logic (comment these if you use Zeus or if it causes problems with some addons)
+// Game logic (comment these if it causes problems with some addons)
 
 7 "^Lightning"
 7 "^Logic"
