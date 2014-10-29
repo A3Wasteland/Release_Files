@@ -23,7 +23,7 @@
 
 // Buildings & objects
 
-7 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|CanisterFuel|CanisterOil|Can_V\d|CashDesk|Money|Suitcase|TentDome)_F"
+7 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|CanisterFuel|CanisterOil|Can_V\d|CashDesk|Money|Rope|Suitcase|TentDome)_F"
 
 // Game logic (comment these if it causes problems with some addons)
 

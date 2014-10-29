@@ -1,12 +1,12 @@
 // A3Wasteland - setVariable.txt BattlEye filters by AgentRev
 
 7 "^A3W_(handleDamageEH|purchasedStoreObject|storeSellBox|unconsciousEngineEH)"
-7 "^BIS_fnc_MP_queue"
+7 "^BIS_fnc_MP_queue$"
 7 "^BuildingLoot"
 7 "^captureTriggerMarker"
-7 "^corpseLocalEH"
 7 "^fpsFix_(eventHandlers|simulationCooloff)"
 7 "^Lootready"
 7 "^processedDeath"
 7 "^spawnBeacon_lastUse"
 7 "^storeNPC_(face|nearestBuilding|setupComplete)"
+7 "^vehSaving_(hours(Alive|Unused)|lastUse|spawningTime)"

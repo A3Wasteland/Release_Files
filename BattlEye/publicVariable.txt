@@ -2,6 +2,7 @@
 
 // Config variables
 
+4 "^A3W_network_compileFuncs" // silent kick without logging because of many false positives due to engine bug
 7 "^A3W_" !"^A3W_playerScore_reviveCount_"
 7 "^PDB_"
 
@@ -15,7 +16,16 @@
 7 "^objectList"
 7 "^static(Heli|Plane|Weapons)List"
 7 "^vehicle(Weapons|Addition)"
+
+// Mission variables
+
+7 "^MainMissions"
+7 "^SideMissions"
+7 "^MoneyMissions"
 7 "^MissionSpawnMarkers"
+7 "^SunkenMissionMarkers"
+7 "^LandConvoyPaths"
+7 "^CoastalConvoyPaths"
 
 // Admin variables
 
@@ -55,7 +65,7 @@
 7 "^client_(firstSpawn|initEH)"
 7 "^current(Date|Invites|OwnerName)"
 7 "^currMissionDir"
-7 "^drawPlayerIcons_"
+7 "^drawPlayer(Icons|Markers)_"
 7 "^drn_DynamicWeather(_DebugText)?EventArgs"
 7 "^drn_fnc_"
 7 "^drn_var_DynamicWeather_(Rain|ServerInitialized)"
@@ -65,7 +75,6 @@
 7 "^JTS_FNC_SENT"
 7 "^managedAction_pvar"
 7 "^managedActions_array"
-7 "^mapEH_drawPlayerMarkers"
 7 "^MF_ITEMS_"
 7 "^mf_remote_"
 7 "^onPauseLoopRunning"
