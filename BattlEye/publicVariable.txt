@@ -57,11 +57,9 @@
 // Other variables
 
 7 "^aActionsIDs"
-7 "^ahSetupDone"
 7 "AntiAntiHack$"
 7 "^bannedPlayerNames"
-7 "^bis_functions_mainscope"
-7 "^cannotAbortMessage"
+7 "^bis_functions_mainscope$"
 7 "^client_(firstSpawn|initEH)"
 7 "^current(Date|Invites|OwnerName)"
 7 "^currMissionDir"
