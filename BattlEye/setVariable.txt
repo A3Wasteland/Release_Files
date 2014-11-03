@@ -1,6 +1,6 @@
 // A3Wasteland - setVariable.txt BattlEye filters by AgentRev
 
-7 "^A3W_(handleDamageEH|purchasedStoreObject|storeSellBox|unconsciousEngineEH)"
+7 "^A3W_((dammaged|engine|handleDamage)EH|purchasedStoreObject|storeSellBox)"
 7 "^BIS_fnc_MP_queue$"
 7 "^BuildingLoot"
 7 "^captureTriggerMarker"

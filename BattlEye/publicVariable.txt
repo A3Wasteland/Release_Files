@@ -1,18 +1,17 @@
 // A3Wasteland - publicVariable.txt BattlEye filters by AgentRev
 
+// If a player cannot join your server due to a false positive, ask him to try restarting the game
+
 // Config variables
 
-4 "^A3W_network_compileFuncs" // silent kick without logging because of many false positives due to engine bug
+5 "^A3W_network_compileFuncs" // many false positives, do not ban
 7 "^A3W_" !"^A3W_playerScore_reviveCount_"
 7 "^PDB_"
 
 // Spawning variables
 
 7 "^currentStaticHelis"
-7 "^civilianVehicles"
-7 "^lightMilitaryVehicles"
-7 "^mediumMilitaryVehicles"
-7 "^waterVehicles"
+7 "^(civilian|water|(light|medium)Military)Vehicles"
 7 "^objectList"
 7 "^static(Heli|Plane|Weapons)List"
 7 "^vehicle(Weapons|Addition)"
@@ -59,7 +58,8 @@
 7 "^aActionsIDs"
 7 "AntiAntiHack$"
 7 "^bannedPlayerNames"
-7 "^bis_functions_mainscope$"
+7 "^bis_fnc_init$"
+5 "^bis_functions_mainscope$" // many false positives, do not ban
 7 "^client_(firstSpawn|initEH)"
 7 "^current(Date|Invites|OwnerName)"
 7 "^currMissionDir"
@@ -80,7 +80,7 @@
 7 "^pDialogTeamkiller"
 7 "^pvar_player(EventServer|TeamKiller)"
 7 "^pvar_(teamKillList|warnTeamKiller)"
-7 "^R3F_LOG_PUBVAR_point_attache"
+5 "^R3F_LOG_PUBVAR_point_attache" // many false positives, do not ban
 7 "^show(Beacons|markers|Player(Icons|Names))"
 7 "^(playerMenu|savePlayer|spawnAction|storePurchase|storeSelling)Handle"
 7 "^v(ehicle)?Checksum"

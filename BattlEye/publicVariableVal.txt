@@ -1,3 +1,4 @@
 // A3Wasteland - publicVariableVal.txt BattlEye filters by AgentRev
 
-7 "^\{" // block all raw code broadcasts
+7 "^\{" // block all raw code broadcasts; small chance of false positives
+1 "\"BIS_fnc_spawn\"" // remote execution method filtered by A3W antihack, but logs are always useful; medium chance of false positives, do not ban indiscriminately
