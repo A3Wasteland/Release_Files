@@ -1,7 +1,8 @@
 // A3Wasteland config file
 // You will need to shutdown the server to edit settings in this file!
-// To enable base saving your server NEEDS to run with the iniDBI mod! Get it at http://forums.bistudio.com/showthread.php?167927
-// if you have any doubts and/or questions about the mission find us at a3wasteland.com 
+// All saving is done via the server's profileNamespace by default; iniDBI will be automatically used if you have it installed
+// if you have any doubts and/or questions about the mission find us at a3wasteland.com
+// This file overrides the settings defined in "server\default_config.sqf"
 
 // General settings
 A3W_startHour = 15;                // In-game hour at mission start (0 to 23)
