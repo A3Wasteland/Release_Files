@@ -69,6 +69,7 @@
 7 "^drn_var_DynamicWeather_(Rain|ServerInitialized)"
 7 "^externalConfigFolder"
 7 "^FAR_Player_Unconscious_thread"
+7 "^HeadlessClient$"
 7 "^horde_jumpmf_var_jumping"
 7 "^JTS_FNC_SENT"
 7 "^managedAction_pvar"

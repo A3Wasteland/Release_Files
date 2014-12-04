@@ -1,0 +1,3 @@
+// A3Wasteland - remoteControl.txt BattlEye filters by AgentRev
+
+1 "" // Log everything; please note that the unit classes shown in remotecontrol.log are the one who have taken control, not the ones being controlled. Most entries will be from UAVs.

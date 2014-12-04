@@ -23,10 +23,14 @@
 
 // Buildings & objects
 
-7 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|CanisterFuel|CanisterOil|Can_V\d|CashDesk|Money|Rope|Suitcase|TentDome)_F"
+7 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|Canister(Fuel|Oil)|Can_V\d|CashDesk|Money|Rope|Suitcase|TentDome)_F"
 
 // Game logic (comment these if it causes problems with some addons)
 
 7 "^Lightning"
 7 "^Logic"
 7 "^Module"
+
+// VR entities (blue/red/green/purple ghosts)
+
+7 "^[CBOI]_Soldier_VR_"
