@@ -1,3 +1,3 @@
 // A3Wasteland - waypointStatement.txt BattlEye filters by AgentRev
 
-7 "" !"^\["true", ""\] \[[\d:-]+ group, \d+\]$" // Allows UAV usage
+5 "" !"^\["true", ""\] \[[\d:-]+ group, \d+\]$" // Allows UAV usage
