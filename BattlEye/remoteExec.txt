@@ -1,5 +1,5 @@
 // A3Wasteland - remoteExec.txt BattlEye filters by AgentRev
 
-5 "" !"^\["true", ""\] \[[\d:-]+ group, \d+\]$" // Allows UAV usage
+5 "" !="" !="true" !="vehicle this (flyInHeight \d+|land 'LAND')" // Allows UAV usage
 
 // Feel free to mass-ban all GUIDs from remoteexec.log
