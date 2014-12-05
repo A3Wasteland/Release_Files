@@ -26,7 +26,7 @@
 5 "^LandConvoyPaths"
 5 "^CoastalConvoyPaths"
 
-// Admin variables
+// Admin variables (many false positives)
 
 5 "^lowAdmins"
 5 "^highAdmins"
@@ -37,7 +37,7 @@
 
 // Persistence
 
-5 "^applyPlayerData"
+5 "^applyPlayerData" // some false positives
 5 "^iniDB_"
 5 "^PDB_databaseNameCompiler"
 5 "^playerData_(alive|gear|loaded)"
@@ -53,20 +53,23 @@
 5 "^spawn(Building|ClassChance)_list"
 5 "^sw(DebugLS|SpZadjust)"
 
+// BIS stuff
+
+5="bis_fnc_init"
+4="bis_functions_mainscope" // 4 = kick without logging, many false positives, do not ban
+
 // Other variables
 
 5 "^aActionsIDs"
 5 "AntiAntiHack$"
-5 "^bannedPlayerNames"
-5 "^bis_fnc_init$"
-5 "^bis_functions_mainscope$" // many false positives, do not ban
+5 "^bannedPlayerNames" // some false positives
 5 "^client_(firstSpawn|initEH)"
-5 "^current(Date|Invites|OwnerName)"
+5 "^current(Date|Invites|OwnerName)" // some false positives
 5 "^currMissionDir"
 5 "^drawPlayer(Icons|Markers)_"
 5 "^drn_DynamicWeather(_DebugText)?EventArgs"
 5 "^drn_fnc_"
-5 "^drn_var_DynamicWeather_(Rain|ServerInitialized)"
+5 "^drn_var_DynamicWeather_(Rain|ServerInitialized)" // some false positives
 5 "^externalConfigFolder"
 5 "^FAR_Player_Unconscious_thread"
 5 "^HeadlessClient$"
@@ -80,7 +83,7 @@
 5 "^openParachuteTimestamp"
 5 "^pDialogTeamkiller"
 5 "^pvar_player(EventServer|TeamKiller)"
-5 "^pvar_(teamKillList|warnTeamKiller)"
+5 "^pvar_(teamKillList|warnTeamKiller)" // some false positives
 5 "^R3F_LOG_PUBVAR_point_attache" // many false positives, do not ban
 5 "^show(Beacons|markers|Player(Icons|Names))"
 5 "^(playerMenu|savePlayer|spawnAction|storePurchase|storeSelling)Handle"
