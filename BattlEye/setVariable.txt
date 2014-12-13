@@ -1,12 +1,13 @@
 // A3Wasteland - setVariable.txt BattlEye filters by AgentRev
 
-5 "^A3W_((dammaged|engine|handleDamage)EH|purchasedStoreObject|storeSellBox)"
+5 "^A3W_((dammaged|engine|handleDamage)EH|(object|vehicle)ID|purchasedStoreObject|storeSellBox)"
 5 "^BIS_fnc_MP_queue$"
 5 "^BuildingLoot"
 5 "^captureTriggerMarker"
 5 "^fpsFix_(eventHandlers|simulationCooloff)"
 5 "^Lootready"
+5 "^objSaving_lastSave"
 5 "^processedDeath"
 5 "^spawnBeacon_lastUse"
 5 "^storeNPC_(face|nearestBuilding|setupComplete)"
-5 "^vehSaving_(hours(Alive|Unused)|lastUse|spawningTime)"
+5 "^vehSaving_(hours(Alive|Unused)|last(Save|Use)|spawningTime)"
