@@ -7,7 +7,7 @@
 // Config variables
 
 4="A3W_network_compileFuncs" // many false positives, do not ban
-5 "^A3W_"
+5 "^A3W_" !"^A3W_playerScore_reviveCount_"
 5 "^PDB_"
 
 // Spawning variables
