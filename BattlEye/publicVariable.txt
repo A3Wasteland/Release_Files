@@ -93,6 +93,7 @@
 4="HeadlessClient"
 5="horde_jumpmf_var_jumping"
 5="JTS_FNC_SENT" // permaban
+5 "^STR_R3F_"
 4="R3F_LOG_PUBVAR_point_attache" // do not ban
 
 // Antihack

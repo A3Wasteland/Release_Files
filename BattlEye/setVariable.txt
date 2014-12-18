@@ -1,6 +1,6 @@
 // A3Wasteland - setVariable.txt BattlEye filters by AgentRev
 
-5 "^A3W_((dammaged|engine|handleDamage)EH|(object|vehicle)ID|purchasedStoreObject|storeSellBox)"
+5 "^A3W_((dammaged|engine|handleDamage)EH|missionMarkerName|(object|vehicle)ID|purchasedStoreObject|storeSellBox)"
 5 "^BIS_fnc_MP_queue$"
 5 "^BuildingLoot"
 5 "^captureTriggerMarker"
