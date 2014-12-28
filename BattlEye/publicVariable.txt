@@ -13,7 +13,7 @@
 // Spawning variables
 
 5="currentStaticHelis"
-5="(civilian|water|(light|medium)Military)Vehicles"
+5 "^(civilian|water|(light|medium)Military)Vehicles"
 5="objectList"
 5="static(Heli|Plane|Weapons)List"
 5 "^vehicle(Weapons|Addition)"
@@ -40,7 +40,7 @@
 // Persistence
 
 5 "^iniDB_"
-5="playerData_(alive|gear|loaded|(info|save)Pairs)"
+5 "^playerData_(alive|gear|loaded|(info|save)Pairs)"
 5 "^pvar_applyPlayerData" // some false positives
 
 // Lootspawner
@@ -57,6 +57,7 @@
 // BIS stuff
 
 5="bis_fnc_init"
+4="BIS_fnc_preload_server" // many false positives, do not ban
 4="bis_functions_mainscope" // many false positives, do not ban
 5 "^BIS_stackedEventHandlers_"
 
@@ -77,11 +78,11 @@
 5="pDialogTeamkiller"
 5="pvar_player(EventServer|TeamKiller)"
 4="pvar_(teamKillList|warnTeamKiller)" // some false positives
-5="show(Beacons|markers|Player(Icons|Names))"
+5 "^show(Beacons|markers|Player(Icons|Names))"
 5="(playerMenu|savePlayer|spawnAction|storePurchase|storeSelling)Handle"
 5="v(ehicle)?Checksum" // permaban
 5="vehicleStore_(lastPurchaseTime|noBuzzard)"
-5="^Town_\d+_(friendly|enemy)(Unit|Player|NPC)s"
+5="Town_\d+_(friendly|enemy)(Unit|Player|NPC)s"
 
 // Addons (many false positives)
 
