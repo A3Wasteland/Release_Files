@@ -7,7 +7,8 @@
 // Config variables
 
 4="A3W_network_compileFuncs" // many false positives, do not ban
-5 "^A3W_" !"^A3W_playerScore_reviveCount_"
+5 "^A3W_fnc_" // permaban
+4 "^A3W_" !"^A3W_playerScore_reviveCount_" // many false positives
 5 "^PDB_"
 
 // Spawning variables
@@ -15,7 +16,7 @@
 5="currentStaticHelis"
 5 "^(civilian|water|(light|medium)Military)Vehicles"
 5="objectList"
-5="static(Heli|Plane|Weapons)List"
+5 "^static(Heli|Plane|Weapons)List"
 5 "^vehicle(Weapons|Addition)"
 
 // Mission variables
@@ -40,19 +41,19 @@
 // Persistence
 
 5 "^iniDB_"
-5 "^playerData_(alive|gear|loaded|(info|save)Pairs)"
-5 "^pvar_applyPlayerData" // some false positives
+5 "^playerData_(alive|gear|loaded|(info|save)Pairs|spawn(Pos|Dir))"
+4 "^pvar_applyPlayerData" // some false positives
 
 // Lootspawner
 
 5="Buildingpositions_list"
 5="exclcontainer_list"
-5="getListBuilding(names|Positionjunction)"
+5 "^getListBuilding(names|Positionjunction)"
 5="getUsedclasses"
-5="loot(Backpack|Item|Magazine|Weapon|worldObject)_list"
+5 "^loot(Backpack|Item|Magazine|Weapon|worldObject)_list"
 5="LSusedclass_list"
-5="spawn(Building|ClassChance)_list"
-5="sw(DebugLS|SpZadjust)"
+5 "^spawn(Building|ClassChance)_list"
+5 "^sw(DebugLS|SpZadjust)"
 
 // BIS stuff
 
@@ -64,38 +65,38 @@
 // Misc A3W variables
 
 5="bannedPlayerNames" // some false positives
-5="client_(firstSpawn|initEH)"
-5="current(Date|Invites|OwnerName)" // some false positives
+5 "^client_(firstSpawn|initEH)"
+5 "^current(Date|Invites|OwnerName)" // some false positives
 5="currMissionDir"
 5 "^drawPlayer(Icons|Markers)_"
 5="externalConfigFolder"
 5 "^managedAction_pvar_"
-5 "^managedActions_array"
+5 "^managedActions_(array|do)"
 5 "^MF_ITEMS_"
-5 "^mf_remote_"
+5 "^mf_remote_" // permaban
 5="onPauseLoopRunning"
 5="openParachuteTimestamp"
 5="pDialogTeamkiller"
-5="pvar_player(EventServer|TeamKiller)"
-4="pvar_(teamKillList|warnTeamKiller)" // some false positives
+5 "^pvar_player(EventServer|TeamKiller)"
+4 "^pvar_(teamKillList|warnTeamKiller)" // some false positives
 5 "^show(Beacons|markers|Player(Icons|Names))"
-5="(playerMenu|savePlayer|spawnAction|storePurchase|storeSelling)Handle"
-5="v(ehicle)?Checksum" // permaban
-5="vehicleStore_(lastPurchaseTime|noBuzzard)"
-5="Town_\d+_(friendly|enemy)(Unit|Player|NPC)s"
+5 "^(playerMenu|savePlayer|spawnAction|storePurchase|storeSelling)Handle"
+5 "^v(ehicle)?Checksum" // permaban
+5 "^vehicleStore_(lastPurchaseTime|noBuzzard)"
+5 "^Town_\d+_(friendly|enemy)(Unit|Player|NPC)s"
 
 // Addons (many false positives)
 
 5 "AntiAntiHack$" // permaban
-4="drn_DynamicWeather(_DebugText)?EventArgs"
+4 "^drn_DynamicWeather(_DebugText)?EventArgs"
 5 "^drn_fnc_"
-4="drn_var_DynamicWeather_(Rain|ServerInitialized)"
+4 "^drn_var_DynamicWeather_(Rain|ServerInitialized)"
 5="FAR_Player_Unconscious_thread"
 4="HeadlessClient"
 5="horde_jumpmf_var_jumping"
 5="JTS_FNC_SENT" // permaban
-5 "^STR_R3F_"
 4="R3F_LOG_PUBVAR_point_attache" // do not ban
+5 "^STR_R3F_"
 
 // Antihack
 
