@@ -3,3 +3,4 @@
 5 "addWeaponTurret"
 5 "BIS_fnc_AAN" // AAN news banner crap
 5 "ctrlCreate" // command used to build script menus
+1 "onMapSingleClick" !"\"onmapsingleclick\"" // log possible teleport hacks

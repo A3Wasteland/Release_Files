@@ -21,9 +21,9 @@
 5 "^[BOI]_G_" // Comment this line if you need to allow guerilla units
 // 5 "^[BOI]_G_(Mortar|Offroad|Van|Boat)" // Uncomment this line if line above is commented
 
-// Buildings & objects (140-char limit between quotes)
+// Buildings & objects (128-char limit between quotes)
 
-5 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|Canister(Fuel|Oil)|Can_V\d|CashDesk|Money|Rope|Sleeping_bag_folded|Suitcase|TentDome)_F" !"^Land_(Ground_sheet_folded_OPFOR)_F"
+5 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|Canister(Fuel|Oil)|Can_V\d|CashDesk|Ground_sheet_folded_OPFOR|Money|Rope)_F" !"^Land_(Sleeping_bag_folded|Suitcase|TentDome)_F"
 
 // Game logic (comment these if it causes problems with some addons)
 
