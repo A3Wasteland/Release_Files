@@ -4,9 +4,8 @@
 
 // Vehicles
 
-5 "^[BOI]_(?!\d)((APC|Boat|Heli|MBT|MRAP|Plane|Quadbike|SDV|Truck|UGV)_|Lifeboat)"
+5 "^[BOI]_(?!\d)((APC|Boat|Heli|MBT|MRAP|Plane|Quadbike|SDV|Truck|UAV_02|UGV)_|Lifeboat)"
 5 "^[BOI]_(?!\d)([HG]MG|Mortar|static_A[AT])_" !"_(weapon|support)_" // Allows disassembly
-5 "^[BOI]_UAV_" !"_(AI|01_)"
 
 // Ammo boxes
 
@@ -16,14 +15,14 @@
 // Civilian & guerilla stuff
 
 5 "^C_" // Comment this line if you need to allow civilian units
-// 5 "^C_((Hatchback|Heli|Offroad|Quadbike|SUV|Van|Boat)_|Rubberboat)" // Uncomment this line if line above is commented
+// 5 "^C_((Boat|Hatchback|Heli|Offroad|Quadbike|SUV|Van)_|Rubberboat)" // Uncomment this line if line above is commented
 
 5 "^[BOI]_G_" // Comment this line if you need to allow guerilla units
-// 5 "^[BOI]_G_(Mortar|Offroad|Van|Boat)" // Uncomment this line if line above is commented
+// 5 "^[BOI]_G_(Boat|Mortar|Offroad|Quadbike|Van)" // Uncomment this line if line above is commented
 
 // Buildings & objects (128-char limit between quotes)
 
-5 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic_V\d|Canister(Fuel|Oil)|Can_V\d|CashDesk|Ground_sheet_folded_OPFOR|Money|Rope)_F" !"^Land_(Sleeping_bag_folded|Suitcase|TentDome)_F"
+5 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic|Can(ister(Fuel|Oil))?|CashDesk|Ground_sheet|Money|Sleeping_bag|Suitcase|TentDome)_" !"^Land_(Rope)_" !"_(dam|ruins)_F$"
 
 // Game logic (comment these if it causes problems with some addons)
 
