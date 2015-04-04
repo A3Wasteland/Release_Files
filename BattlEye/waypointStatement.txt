@@ -1,3 +1,0 @@
-// A3Wasteland - waypointStatement.txt BattlEye filters by AgentRev
-
-// deprecated
