@@ -87,6 +87,7 @@
 
 // Addons (many false positives)
 
+4="cba_versioning_state"
 4 "^drn_DynamicWeather(_DebugText)?EventArgs"
 5 "^drn_fnc_"
 4 "^drn_var_DynamicWeather_(Rain|ServerInitialized)"
