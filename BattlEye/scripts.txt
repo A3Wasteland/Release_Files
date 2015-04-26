@@ -2,5 +2,5 @@
 
 5 "addWeaponTurret"
 5 "BIS_fnc_AAN" // AAN news banner crap
-5 "ctrlCreate" // command used to build script menus
+5 "ctrlCreate" !"_prevButton = _display ctrlCreate [\"RscButtonMenu\", 90110, _dbg];" // command used to build script menus, CBA exemption
 1 "onMapSingleClick" !"\"onmapsingleclick\"" // log possible teleport hacks
