@@ -1,0 +1,40 @@
+Update instructions for A3W v1.2
+================================
+
+### extDB2 migration
+
+  1. Delete your existing extDB libraries (Windows: extDB.dll, tbb.dll, tbbmalloc.dll / Linux: extDB.so)
+  2. Rename "extdb-conf.ini" to something like "extdb-conf_old.ini"
+  3. In the "extDB" folder from the Arma 3 root, rename the "db_custom" folder to "sql_custom_v2", and delete the "a3wasteland.ini" located inside; do NOT rename "extDB"
+  4. Put the new extDB2 libraries (Windows: extDB2.dll / Linux: extDB2.so) and the new extdb-conf.ini in the Arma 3 root
+  5. Put the new "a3wasteland.ini" in the aforementioned "sql_custom_v2" folder
+  6. Open the new "extdb-conf.ini" in a text editor, and adjust the connection settings in the [A3W] section at the bottom according to your previous settings from "extdb-conf_old.ini"
+
+That's it. You don't really to use -mod with an "@extDB" folder, putting the libraries alongside arma3server.exe is sufficient. Also, if you plan on collecting debug info for me or Torndeco, you should keep the extDB2 debug libraries ready in a separate folder, so that you can easily swap them out with the regular ones if needed.
+
+---
+
+### Vehicle textures migration (extDB)
+
+  1. Shutdown server
+  2. Run "vehicleTextures_jpg_to_paa.sql" on your MySQL database. If your database is not named "a3wasteland", adjust the "USE" statement accordingly.
+
+---
+
+### Vehicle textures migration (iniDB)
+
+  1. Shutdown server
+  2. Open all the "A3W_Vehicles.ini" file(s) from the "db" folder in the Arma 3 root in your favorite text editor
+  3. Replace all (Ctrl+H) "\camo_fuel." to "\swamp." (without quotes)
+  4. Replace all "\camo_fack." to "\camo_orange."
+  5. Replace all "\camo_deser." to "\camo_red."
+  6. Replace all "\camo_pank." to "\camo_pink."
+  7. Replace all ".jpg" to ".paa"
+
+Example in Notepad++: http://i.imgur.com/D8o46dh.jpg
+
+---
+
+### Vehicle textures migration (profileNamespace)
+
+Wipe all data by deleting the "xxx.vars.Arma3Profile" file, there's no other way.
