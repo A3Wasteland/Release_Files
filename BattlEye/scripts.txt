@@ -1,6 +1,6 @@
 // A3Wasteland - scripts.txt BattlEye filters by AgentRev
 
 5 "addWeaponTurret"
-5 "BIS_fnc_AAN" // AAN news banner crap
-5 "ctrlCreate" !"_prevButton = _display ctrlCreate [\"RscButtonMenu\", 90110, _dbg];" // command used to build script menus, CBA exemption
+5 "BIS_fnc_AAN" !"\"BIS_fnc_AAN\""// AAN news banner crap
+5 "ctrlCreate" !"_ListGroup = _display ctrlCreate [\"RscControlsGroupNoHScrollbars\"," !"_prevButton = _display ctrlCreate [\"RscButtonMenu\", 90110, _dbg];" // command used to build script menus
 1 "onMapSingleClick" !"\"onmapsingleclick\"" // log possible teleport hacks
