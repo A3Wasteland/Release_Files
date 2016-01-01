@@ -1,5 +1,5 @@
 // A3Wasteland - remoteExec.txt BattlEye filters by AgentRev
 
-5 "" !="" !="true" !="vehicle this (flyInHeight \d+|land 'LAND')" !="\[_this\] call onBountySystemPlayerDied;" !="bis_fnc_execvm \[\[.+,false\],\"initPlayerServer.sqf\"\]" // allows UAV usage, with exception for third-party bounty system and initPlayerServer
+5 "" !="" !="true" !="vehicle this (flyInHeight \d+|land 'LAND')" !="\[_this\] call onBountySystemPlayerDied;" !="bis_fnc_execvm \[\[.+,(true|false)\],\"initPlayerServer.sqf\"\]" // allows UAV usage, with exception for third-party bounty system and initPlayerServer
 
 // Feel free to mass-ban all GUIDs from remoteexec.log, but be careful with game updates due to false detections!
