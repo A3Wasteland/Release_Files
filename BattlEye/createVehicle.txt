@@ -4,23 +4,26 @@
 
 // Vehicles
 
-5 "^[BOI]_(?!\d)(APC|Boat|Heli|Lifeboat|MBT|MRAP|Plane|Quadbike|SDV|Truck|UAV_02|UGV)(_|$)"
-5 "^[BOI]_(?!\d)([HG]MG|Mortar|static_A[AT])_" !"_(weapon|support)_" // Allows disassembly
+5 "^[BOI]_(?!\d)((T|CTRG)_)?(APC|Boat|Heli|Lifeboat|LSV|MBT|MRAP|Plane|Quadbike|SDV|Truck|UAV|UGV|VTOL)(_|$)" !"_UAV_01_"
+5 "^[BOI]_(?!\d)(T_)?([HG]MG|Mortar|static_A[AT])_" !"_(weapon|support)_" // Allows disassembly
 
 // Ammo boxes
 
 5 "^Box_"
-5 "^[CBOI]G?_supplyCrate_"
+5 "^[CBOI]G?_(T_)?supplyCrate_"
 5 "^([BOI]_)?CargoNet_"
 5 "^B_Slingload_"
 
 // Civilian & guerilla stuff
 
 5 "^C_" // Comment this line if you need to allow civilian units
-// 5 "^C_(Boat|Hatchback|Heli|Offroad|Quadbike|Rubberboat|SUV|Van)(_|$)" // Uncomment this line if line above is commented
+// 5 "^C_(Boat|Hatchback|Heli|Offroad|Plane|Quadbike|Rubberboat|Scooter|SUV|Van)(_|$)" // Uncomment this line if line above is commented
 
-5 "^[BOI]_G_" // Comment this line if you need to allow guerilla units
-// 5 "^[BOI]_G_(Boat|Mortar|Offroad|Quadbike|Van)" // Uncomment this line if line above is commented
+5 "^[BOI]_[CG]_" // Comment this line if you need to allow guerilla units
+// 5 "^[BOI]_[CG]_(Boat|Heli|Mortar|Offroad|Plane|Quadbike|Van)_" // Uncomment this line if line above is commented
+
+5 "^B_GEN_" // Comment this line if you need to allow gendarmerie units
+// 5 "^B_GEN_Offroad_" // Uncomment this line if line above is commented
 
 // Buildings & objects (128-char limit between quotes)
 
