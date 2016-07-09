@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `PlayerStorage` (
     REFERENCES `PlayerInfo` (`UID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_PlayerStorage_ServerMap1`
+  CONSTRAINT `fk_PlayerStorage_ServerMap`
     FOREIGN KEY (`MapID`)
     REFERENCES `ServerMap` (`ID`)
     ON DELETE NO ACTION
