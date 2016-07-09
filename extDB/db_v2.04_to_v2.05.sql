@@ -1,0 +1,97 @@
+-- This is for those who are running the A3W database v2.04
+
+USE `a3wasteland`; -- database name
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
+
+ALTER TABLE `AntihackLog` 
+CHANGE COLUMN `HackValue` `HackValue` VARCHAR(1024) CHARACTER SET 'utf8' NOT NULL;
+
+ALTER TABLE `PlayerInfo` 
+CHANGE COLUMN `BattlEyeGUID` `BattlEyeGUID` VARCHAR(32) NULL AFTER `UID`,
+ADD COLUMN `Bounty` INT UNSIGNED NOT NULL DEFAULT 0 AFTER `BankMoney`,
+ADD COLUMN `BountyKills` VARCHAR(8192) NOT NULL DEFAULT '[]' AFTER `Bounty`;
+
+ALTER TABLE `PlayerSave` 
+DROP INDEX `idx_PlayerSave_uniquePlayer` ,
+ADD UNIQUE INDEX `idx_PlayerSave_uniquePlayerMap` (`PlayerUID` ASC, `MapID` ASC) ,
+ADD INDEX `idx_PlayerSave_crossMap` (`PlayerUID` ASC, `LastModified` DESC);
+
+ALTER TABLE `ServerVehicles` 
+ADD COLUMN `Parked` TINYINT(1) UNSIGNED NOT NULL DEFAULT 0 AFTER `OwnerUID`,
+ADD COLUMN `LockState` TINYINT(1) UNSIGNED NOT NULL DEFAULT 1 AFTER `Parked`,
+ADD INDEX `idx_ServerVehicles_parkedOwners` (`OwnerUID` ASC, `Parked` DESC);
+
+ALTER TABLE `ServerTime` 
+DROP INDEX `idx_ServerTime_uniquePair` ,
+ADD UNIQUE INDEX `idx_ServerTime_uniqueServerMap` (`ServerID` ASC, `MapID` ASC);
+
+CREATE TABLE IF NOT EXISTS `ServerMines` (
+  `ID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `ServerID` INT UNSIGNED NOT NULL,
+  `MapID` INT UNSIGNED NOT NULL,
+  `CreationDate` TIMESTAMP NULL,
+  `LastInteraction` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `OwnerUID` VARCHAR(32) NOT NULL DEFAULT '\"\"',
+  `Class` VARCHAR(128) NOT NULL DEFAULT 'nil',
+  `Position` VARCHAR(256) NOT NULL DEFAULT 'nil',
+  `Direction` VARCHAR(256) NOT NULL DEFAULT '[]',
+  `Damage` FLOAT(11) NOT NULL DEFAULT 0,
+  `Variables` VARCHAR(4096) NOT NULL DEFAULT '[]',
+  PRIMARY KEY (`ID`) ,
+  INDEX `fk_ServerMines_ServerInstance_idx` (`ServerID` ASC) ,
+  INDEX `fk_ServerMines_ServerMap_idx` (`MapID` ASC) ,
+  CONSTRAINT `fk_ServerMines_ServerInstance`
+    FOREIGN KEY (`ServerID`)
+    REFERENCES `ServerInstance` (`ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ServerMines_ServerMap`
+    FOREIGN KEY (`MapID`)
+    REFERENCES `ServerMap` (`ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS `PlayerStorage` (
+  `PlayerUID` VARCHAR(32) NOT NULL,
+  `MapID` INT UNSIGNED NOT NULL,
+  `CreationDate` TIMESTAMP NULL,
+  `LastModified` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `Weapons` VARCHAR(4096) NOT NULL DEFAULT '[]',
+  `Magazines` VARCHAR(4096) NOT NULL DEFAULT '[]',
+  `Items` VARCHAR(4096) NOT NULL DEFAULT '[]',
+  `Backpacks` VARCHAR(4096) NOT NULL DEFAULT '[]',
+  INDEX `fk_PlayerStorage_ServerMap_idx` (`MapID` ASC) ,
+  UNIQUE INDEX `idx_PlayerStorage_uniquePlayerMap` (`PlayerUID` ASC, `MapID` ASC) ,
+  CONSTRAINT `fk_PlayerStorage_PlayerInfo`
+    FOREIGN KEY (`PlayerUID`)
+    REFERENCES `PlayerInfo` (`UID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_PlayerStorage_ServerMap1`
+    FOREIGN KEY (`MapID`)
+    REFERENCES `ServerMap` (`ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+START TRANSACTION;
+
+INSERT INTO DBInfo SET Name = 'Version', Value = '2.05' 
+ON DUPLICATE KEY UPDATE Value = VALUES(Value);
+
+COMMIT;
