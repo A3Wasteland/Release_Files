@@ -21,27 +21,22 @@
 
 // Mission variables
 
-5="MainMissions"
-5="SideMissions"
-5="MoneyMissions"
+5="(Main|Side|Money)Missions"
 5="MissionSpawnMarkers"
-5="SunkenMissionMarkers"
-5="LandConvoyPaths"
-5="CoastalConvoyPaths"
+5="(Sunken|Forest)MissionMarkers"
+5="(Land|Coastal)ConvoyPaths"
 
 // Admin variables (many false positives)
 
-4="lowAdmins"
-4="highAdmins"
+4="(low|high)Admins"
 4="serverOwners"
 5="moderators"
-5="administrators"
-5="serverAdministrators"
+5="(server)?Administrators"
 
 // Persistence
 
 5 "^iniDB_"
-5 "^playerData_(alive|gear|loaded|(info|save)Pairs|spawn(Pos|Dir))"
+5 "^playerData_"
 4 "^pvar_applyPlayerData" // some false positives
 
 // Lootspawner
@@ -70,6 +65,7 @@
 5="currMissionDir"
 5 "^drawPlayer(Icons|Markers)_"
 5="externalConfigFolder"
+5 "^(hunger|thirst)Level"
 5 "^managedAction_pvar_"
 5 "^managedActions_(array|do)"
 5 "^MF_ITEMS_"
@@ -83,10 +79,11 @@
 5 "^(playerMenu|savePlayer|spawnAction|storePurchase|storeSelling)Handle"
 5 "^v(ehicle)?Checksum" // permaban
 5 "^vehicleStore_(lastPurchaseTime|noBuzzard)"
-5 "^Town_\d+_(friendly|enemy)(Unit|Player|NPC)s"
+5 "^Town_\d+_"
 
 // Addons (many false positives)
 
+5 "^camera_"
 4="cba_versioning_state"
 4 "^drn_DynamicWeather"
 5 "^drn_fnc_"
@@ -94,8 +91,11 @@
 5="FAR_Player_Unconscious_thread"
 5 "^horde_jumpmf_var_"
 5="JTS_FNC_SENT" // permaban
+5="onBountySystemPlayerDied" // permaban
+5 "^p[ps]_" // parking and storage
 4="R3F_LOG_PUBVAR_point_attache" // do not ban
 5 "^STR_R3F_"
+5 "^va_" // vactions
 
 // Antihack (128-char limit between quotes)
 
