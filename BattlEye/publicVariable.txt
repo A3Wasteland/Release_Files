@@ -92,7 +92,7 @@
 5 "^horde_jumpmf_var_"
 5="JTS_FNC_SENT" // permaban
 5="onBountySystemPlayerDied" // permaban
-5 "^p[ps]_" // parking and storage
+5 "^p[ps]_" !"_request$" // parking and storage
 4="R3F_LOG_PUBVAR_point_attache" // do not ban
 5 "^STR_R3F_"
 5 "^va_" // vactions
