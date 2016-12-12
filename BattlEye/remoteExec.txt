@@ -1,5 +1,7 @@
 // A3Wasteland - remoteExec.txt BattlEye filters by AgentRev
 
+4 "REDONE3" // possible false positive, kick without logging (do NOT change to 5)
+
 // allows UAV usage, third-party bounty system, and remoteExec functions (filtered by CfgRemoteExec)
 5 "" !="" !="true" !="vehicle this (flyInHeight \d+|land 'LAND')" !="\[_this\] call onBountySystemPlayerDied;" !="\w+?_(fnc|remote|srv)_\w+? \[.*\]"
 
