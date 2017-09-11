@@ -1,10 +1,11 @@
 // A3Wasteland - createVehicle.txt BattlEye filters by AgentRev, JoSchaap, and k4n30
 
 // Set everything to 1 if you are using Zeus
+// Warning: 128-char limit between double-quotes
 
 // Vehicles
 
-5 "^[BOI]_(?!\d)(T_)?(APC|Boat|Heli|Lifeboat|LSV|MBT|MRAP|Plane|Quadbike|SDV|Truck|U[AG]V|VTOL)(_|$)" !"_UAV_(AI|01)(_|$)" // Allows quadcopter
+5 "^[BOI]_(?!\d)(T_)?(APC|Heli|(Life)?Boat|LSV|MBT|MRAP|Plane|Quadbike|SDV|Truck|U[AG]V|VTOL)(_|$)" !"_UAV_(AI|01|06)(_|$)" // Allows quadcopter
 5 "^[BOI]_(?!\d)(T_)?([HG]MG|Mortar|static_A[AT])_" !"_(weapon|support)_" // Allows disassembly
 
 // Ammo boxes
@@ -16,8 +17,8 @@
 
 // Civilian & guerilla stuff
 
-5 "^C_" // Comment this line if you need to allow civilian units
-// 5 "^C_(Boat|Hatchback|Heli|Offroad|Plane|Quadbike|Rubberboat|Scooter|SUV|Van)(_|$)" // Uncomment this line if line above is commented
+5 "^C_" !"_UAV_(AI|01|06)(_|$)" // Comment this line if you need to allow civilian units
+// 5 "^C_(IDAP_)?(Hatchback|Heli|Offroad|Plane|Quadbike|(Rubber)?Boat|Scooter|SUV|UGV|Van)(_|$)" // Uncomment this line if line above is commented
 
 5 "^[BOI]_[CG]_" // Comment this line if you need to allow guerilla units
 // 5 "^[BOI]_[CG]_(Boat|Heli|Mortar|Offroad|Plane|Quadbike|Van)_" // Uncomment this line if line above is commented
@@ -25,7 +26,7 @@
 5 "^B_(CTRG|GEN)_" // Comment this line if you need to allow CTRG or gendarmerie units
 // 5 "^B_(CTRG|GEN)_(LSV|Heli|Offroad)_" // Uncomment this line if line above is commented
 
-// Buildings & objects (128-char limit between quotes)
+// Buildings & objects
 
 5 "^Land_" !"^Land_(BakedBeans|BarrelEmpty|BottlePlastic|Can(ister(Fuel|Oil))?|CashDesk|Ground_sheet|Money|Sleeping_bag|Suitcase|TentDome)_" !"^Land_(Rope)_" !"_(dam|ruins)_F$"
 

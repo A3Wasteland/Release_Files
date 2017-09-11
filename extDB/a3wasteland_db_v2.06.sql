@@ -54,6 +54,7 @@ ENGINE = InnoDB;
 -- Table `AntihackLog`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `AntihackLog` (
+  `EntryID` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `ServerID` INT UNSIGNED NOT NULL,
   `Time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `PlayerName` VARCHAR(256) CHARACTER SET 'utf8' NOT NULL,
@@ -65,6 +66,7 @@ CREATE TABLE IF NOT EXISTS `AntihackLog` (
   `AdminNote` VARCHAR(4096) CHARACTER SET 'utf8' NULL,
   INDEX `fk_AntihackLog_ServerInstance_idx` (`ServerID` ASC),
   INDEX `idx_AntihackLog_kickOnJoin` (`PlayerUID` ASC, `KickOnJoin` DESC),
+  PRIMARY KEY (`EntryID`),
   CONSTRAINT `fk_AntihackLog_ServerInstance`
     FOREIGN KEY (`ServerID`)
     REFERENCES `ServerInstance` (`ID`)
