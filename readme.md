@@ -5,7 +5,7 @@ This repository is where external files related to A3Wasteland are published.
 
 Please take some time to read [IMPORTANT.txt](IMPORTANT.txt) and [A3W_extDB3_README.txt](A3W_extDB3_README.txt) before asking any questions about how to run this mission.
 
-The actual mission PBO must be mnaully compiled from the following sources:
+The actual mission PBO must be manually compiled from the following sources:
 
  - https://github.com/A3Wasteland/ArmA3_Wasteland.Altis
  - https://github.com/A3Wasteland/ArmA3_Wasteland.Stratis
