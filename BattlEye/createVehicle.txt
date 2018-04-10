@@ -5,7 +5,7 @@
 
 // Vehicles
 
-5 "^[BOI]_(?!\d)(T_)?(APC|Heli|(Life)?Boat|LSV|MBT|MRAP|Plane|Quadbike|SDV|Truck|U[AG]V|VTOL)(_|$)" !"_UAV_(AI|01|06)(_|$)" // Allows quadcopter
+5 "^[BOI]_(?!\d)(T_)?(AFV|APC|Heli|(Life)?Boat|LSV|LT|MBT|MRAP|Plane|Quadbike|SDV|Truck|U[AG]V|VTOL)(_|$)" !"_UAV_(AI|01|06)(_|$)" // Allows quadcopter
 5 "^[BOI]_(?!\d)(T_)?([HG]MG|Mortar|static_A[AT])_" !"_(weapon|support)_" // Allows disassembly
 
 // Ammo boxes

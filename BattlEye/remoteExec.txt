@@ -1,6 +1,6 @@
 // A3Wasteland - remoteExec.txt BattlEye filters by AgentRev
 
 // allows remoteExec functions (filtered by CfgRemoteExec), UAV usage, and third-party bounty system
-5 "" !="" !="true" !="\w+?_(fnc|remote|srv)_\w+? \[.*\]" !="vehicle this (flyInHeight \d+|land 'LAND')" !="\[_this\] call onBountySystemPlayerDied;"
+5 "" !="" !="true" !="\w+?_(fnc|remote|srv)_\w+? \[[\S\s]*\]" !="vehicle this (flyInHeight \d+|land 'LAND')" !="\[_this\] call onBountySystemPlayerDied;"
 
 // Feel free to mass-ban all GUIDs from remoteexec.log, but be careful with game updates and addons/mods due to false detections!
